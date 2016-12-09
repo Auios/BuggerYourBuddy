@@ -118,12 +118,10 @@ dim as gameManager gm
 using fb, auios
 
 dim shared as AuWindow wnd
-
 wnd.set(640,480,,,,"Bugger Your Buddy!")
 wnd.create()
-
 color(rgb(0,0,0), rgb(255,255,255))
-
+cls()
 do
     
     select case gm.menu
