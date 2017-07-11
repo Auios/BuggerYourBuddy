@@ -35,6 +35,7 @@ namespace BuggerYourBuddy
 
             dgvPlayers.Columns[0].HeaderText = "Round";
             dgvPlayers.Columns[0].Width = 48;
+            dgvPlayers.Columns[0].ReadOnly = true;
 
             for(int i = 0; i<players.Rows.Count;i++)
             {
@@ -76,6 +77,11 @@ namespace BuggerYourBuddy
                 dr[0] = 1;
                 gameTable.Rows.Add(dr);
             }
+
+            //Add the last row for showing player scores
+            dr = gameTable.NewRow();
+            gameTable.Rows.Add(dr);
+            dgvPlayers.Rows[dgvPlayers.RowCount - 1].Cells[1].ReadOnly = true;
         }
 
         private void cmdClose_Click(object sender, EventArgs e)
@@ -86,6 +92,11 @@ namespace BuggerYourBuddy
                 Game.endGame();
                 this.Close();
             }
+        }
+
+        private void dgvPlayers_RowValidating(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            
         }
     }
 }

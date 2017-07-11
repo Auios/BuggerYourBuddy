@@ -48,6 +48,7 @@
             this.dgvPlayers.RowHeadersVisible = false;
             this.dgvPlayers.Size = new System.Drawing.Size(919, 496);
             this.dgvPlayers.TabIndex = 0;
+            this.dgvPlayers.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dgvPlayers_RowValidating);
             // 
             // cmdClose
             // 
