@@ -1,0 +1,11 @@
+C:\Users\Auios\Desktop\BuggerYourBuddy\BuggerYourBuddy\bin\Debug\BuggerYourBuddy.exe.config
+C:\Users\Auios\Desktop\BuggerYourBuddy\BuggerYourBuddy\obj\Debug\BuggerYourBuddy.csprojResolveAssemblyReference.cache
+C:\Users\Auios\Desktop\BuggerYourBuddy\BuggerYourBuddy\obj\Debug\BuggerYourBuddy.Properties.Resources.resources
+C:\Users\Auios\Desktop\BuggerYourBuddy\BuggerYourBuddy\obj\Debug\BuggerYourBuddy.wMainMenu.resources
+C:\Users\Auios\Desktop\BuggerYourBuddy\BuggerYourBuddy\obj\Debug\BuggerYourBuddy.csproj.GenerateResource.Cache
+C:\Users\Auios\Desktop\BuggerYourBuddy\BuggerYourBuddy\bin\Debug\BuggerYourBuddy.exe
+C:\Users\Auios\Desktop\BuggerYourBuddy\BuggerYourBuddy\bin\Debug\BuggerYourBuddy.pdb
+C:\Users\Auios\Desktop\BuggerYourBuddy\BuggerYourBuddy\obj\Debug\BuggerYourBuddy.wAddPlayers.resources
+C:\Users\Auios\Desktop\BuggerYourBuddy\BuggerYourBuddy\obj\Debug\BuggerYourBuddy.exe
+C:\Users\Auios\Desktop\BuggerYourBuddy\BuggerYourBuddy\obj\Debug\BuggerYourBuddy.pdb
+C:\Users\Auios\Desktop\BuggerYourBuddy\BuggerYourBuddy\obj\Debug\BuggerYourBuddy.wGame.resources
