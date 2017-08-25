@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(wGame));
             this.dgvPlayers = new System.Windows.Forms.DataGridView();
             this.cmdClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlayers)).BeginInit();
@@ -48,6 +49,7 @@
             this.dgvPlayers.RowHeadersVisible = false;
             this.dgvPlayers.Size = new System.Drawing.Size(919, 496);
             this.dgvPlayers.TabIndex = 0;
+            this.dgvPlayers.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgvPlayers_CellValidating);
             this.dgvPlayers.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dgvPlayers_RowValidating);
             // 
             // cmdClose
@@ -71,9 +73,8 @@
             this.ControlBox = false;
             this.Controls.Add(this.cmdClose);
             this.Controls.Add(this.dgvPlayers);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(400, 200);
             this.Name = "wGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "wGame";

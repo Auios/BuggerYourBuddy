@@ -23,26 +23,49 @@ namespace BuggerYourBuddy
 
         private void cmdAddPlayer_Click(object sender, EventArgs e)
         {
+            bool playerAlreadyExists = false;
+
             //Check if textbox has anything in it
-            if(txtPlayerName.Text.Trim().Length > 0)
+            if (txtPlayerName.Text.Trim().Length > 0)
             {
-                //Add player to the list box
-                lbxPlayerList.Items.Add(txtPlayerName.Text.Trim());
-                lblPlayerCount.Text = lbxPlayerList.Items.Count.ToString() + "/10";
-                txtPlayerName.Text = "";
-                cmdRemove.Enabled = true;
-                this.calculateInformation();
-
-                //Disable the add player button when player list is full
-                if(lbxPlayerList.Items.Count == 10)
+                
+                txtPlayerName.Text = txtPlayerName.Text.Trim();
+                
+                //Check if another player has the same name
+                foreach(string lbxItem in lbxPlayerList.Items)
                 {
-                    cmdAddPlayer.Enabled = false;
-                    txtPlayerName.Enabled = false;
+                    //Same name?
+                    if (txtPlayerName.Text == lbxItem)
+                    {
+                        playerAlreadyExists = true;
+                        break;
+                    }
                 }
+                
+                if(!playerAlreadyExists)
+                {
+                    //Add player to the list box
+                    lbxPlayerList.Items.Add(txtPlayerName.Text);
+                    lblPlayerCount.Text = lbxPlayerList.Items.Count.ToString() + "/10";
+                    txtPlayerName.Text = "";
+                    cmdRemove.Enabled = true;
+                    this.calculateInformation();
 
-                //Enable the next button when player count is valid
-                if (lbxPlayerList.Items.Count >= 4)
-                    cmdDone.Enabled = true;
+                    //Disable the add player button when player list is full
+                    if (lbxPlayerList.Items.Count == 10)
+                    {
+                        cmdAddPlayer.Enabled = false;
+                        txtPlayerName.Enabled = false;
+                    }
+
+                    //Enable the next button when player count is valid
+                    if (lbxPlayerList.Items.Count >= 4)
+                        cmdDone.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("Cannot add two players with the same name!");
+                }
             }
             txtPlayerName.Select();
         }

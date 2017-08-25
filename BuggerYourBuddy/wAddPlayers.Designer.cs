@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(wAddPlayers));
             this.txtPlayerName = new System.Windows.Forms.TextBox();
             this.cmdAddPlayer = new System.Windows.Forms.Button();
             this.lbxPlayerList = new System.Windows.Forms.ListBox();
@@ -189,6 +190,7 @@
             this.Controls.Add(this.cmdAddPlayer);
             this.Controls.Add(this.txtPlayerName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "wAddPlayers";

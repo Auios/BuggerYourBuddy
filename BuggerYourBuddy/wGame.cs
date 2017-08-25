@@ -13,6 +13,7 @@ namespace BuggerYourBuddy
     public partial class wGame : Form
     {
         int colWidth = 100;
+        int playerCount;
 
         public wGame()
         {
@@ -26,7 +27,9 @@ namespace BuggerYourBuddy
 
             DataTable gameTable = new DataTable();
             gameTable.Columns.Add("roundNumber", typeof(int));
-            for(int i = 0; i < players.Rows.Count; i++)
+            this.playerCount = players.Rows.Count;
+
+            for(int i = 0; i < playerCount; i++)
             {
                 gameTable.Columns.Add(players.Rows[i].ItemArray[0].ToString(), typeof(int));
                 gameTable.Columns.Add("chk_" + players.Rows[i].ItemArray[0].ToString(), typeof(bool));
@@ -37,7 +40,7 @@ namespace BuggerYourBuddy
             dgvPlayers.Columns[0].Width = 48;
             dgvPlayers.Columns[0].ReadOnly = true;
 
-            for(int i = 0; i<players.Rows.Count;i++)
+            for(int i = 0; i < this.playerCount; i++)
             {
                 int currentCol = i * 2 + 1;
                 dgvPlayers.Columns[currentCol].Width = colWidth;
@@ -94,9 +97,49 @@ namespace BuggerYourBuddy
             }
         }
 
+        private void dgvPlayers_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
+        {
+            updateScores();
+        }
+
         private void dgvPlayers_RowValidating(object sender, DataGridViewCellCancelEventArgs e)
         {
             
+        }
+
+        private void updateScores()
+        {
+            //Clear the score row's data
+            for(int i = 0; i < this.playerCount; i++)
+            {
+                dgvPlayers.Rows[dgvPlayers.Rows.Count - 1].Cells[(2 * i) + 1].Value = 0;
+            }
+
+            //Rows
+            for(int i = 0; i < dgvPlayers.Rows.Count-1; i++)
+            {
+                //Cells
+                for(int j = 0; j < this.playerCount; j++)
+                {
+                    //If player got their bid
+                    if(dgvPlayers.Rows[i].Cells[(2 * j) + 2].Value.ToString() == "True")
+                    {
+                        if(dgvPlayers.Rows[i].Cells[(2 * j) + 1].Value.ToString() != String.Empty)
+                        {
+                            int currentScore = 0;
+                            int addScore = 0;
+                            int newScore = 0;
+
+                            int.TryParse(dgvPlayers.Rows[dgvPlayers.Rows.Count - 1].Cells[(2 * j) + 1].Value.ToString(), out currentScore);
+                            if (!int.TryParse(dgvPlayers.Rows[i].Cells[(2 * j) + 1].Value.ToString(), out addScore))
+                                dgvPlayers.Rows[i].Cells[(2 * j) + 1].Value = "";
+                            newScore = currentScore + addScore + 10;
+
+                            dgvPlayers.Rows[dgvPlayers.Rows.Count - 1].Cells[(2 * j) + 1].Value = newScore;
+                        }
+                    }
+                }
+            }
         }
     }
 }

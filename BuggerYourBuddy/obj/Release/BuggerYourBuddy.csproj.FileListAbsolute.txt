@@ -1,0 +1,10 @@
+C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\bin\Release\BuggerYourBuddy.exe.config
+C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\bin\Release\BuggerYourBuddy.exe
+C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\bin\Release\BuggerYourBuddy.pdb
+C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\obj\Release\BuggerYourBuddy.Properties.Resources.resources
+C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\obj\Release\BuggerYourBuddy.wGame.resources
+C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\obj\Release\BuggerYourBuddy.wMainMenu.resources
+C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\obj\Release\BuggerYourBuddy.wAddPlayers.resources
+C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\obj\Release\BuggerYourBuddy.csproj.GenerateResource.Cache
+C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\obj\Release\BuggerYourBuddy.exe
+C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\obj\Release\BuggerYourBuddy.pdb
