@@ -8,3 +8,7 @@ C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\obj\Release\Bugg
 C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\obj\Release\BuggerYourBuddy.csproj.GenerateResource.Cache
 C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\obj\Release\BuggerYourBuddy.exe
 C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\obj\Release\BuggerYourBuddy.pdb
+C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\bin\Release\BuggerYourBuddy.exe.manifest
+C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\bin\Release\BuggerYourBuddy.application
+C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\obj\Release\BuggerYourBuddy.exe.manifest
+C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\obj\Release\BuggerYourBuddy.application
