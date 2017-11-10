@@ -12,3 +12,4 @@ C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\bin\Release\Bugg
 C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\bin\Release\BuggerYourBuddy.application
 C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\obj\Release\BuggerYourBuddy.exe.manifest
 C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\obj\Release\BuggerYourBuddy.application
+C:\Users\Auios\Documents\GitHub\BuggerYourBuddy\BuggerYourBuddy\obj\Release\BuggerYourBuddy.csprojResolveAssemblyReference.cache

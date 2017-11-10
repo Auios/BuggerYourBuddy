@@ -85,6 +85,12 @@ namespace BuggerYourBuddy
             dr = gameTable.NewRow();
             gameTable.Rows.Add(dr);
             dgvPlayers.Rows[dgvPlayers.RowCount - 1].Cells[1].ReadOnly = true;
+
+            //Prevent the columns from being sorted
+            foreach(DataGridViewColumn clm in dgvPlayers.Columns)
+            {
+                clm.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
         }
 
         private void cmdClose_Click(object sender, EventArgs e)
